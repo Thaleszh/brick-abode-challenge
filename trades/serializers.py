@@ -6,7 +6,7 @@ from trades.models import Pair, Deal, Provider
 class ProviderSerializer(ModelSerializer):
     class Meta:
         model = Provider
-        fields = ['__all__']
+        fields = ['id', 'name']
 
 
 class CreatePairSerializer(ModelSerializer):
