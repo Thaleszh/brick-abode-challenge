@@ -8,6 +8,7 @@ class Provider(models.Model):
         return f'{self.name}'
 
     name = models.CharField(
+        unique=True,
         max_length=64
     )
 
@@ -21,6 +22,7 @@ class Pair(models.Model):
     )
 
     time = models.DateTimeField(
+        unique=True,
         default=datetime.now
     )
 

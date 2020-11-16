@@ -2,6 +2,7 @@ from django.contrib import admin
 from trades.models import Deal, Pair, Provider
 # Register your models here.
 
+
 @admin.register(Deal)
 class DealAdmin(admin.ModelAdmin):
     list_display = ('id', 'pair', 'quantity')
