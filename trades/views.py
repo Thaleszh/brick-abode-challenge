@@ -25,3 +25,4 @@ class PairViewSet(ModelViewSet):
 
 class ProviderViewSet(ModelViewSet):
     queryset = Provider.objects.all()
+    serializer_class = serializer.ProviderSerializer

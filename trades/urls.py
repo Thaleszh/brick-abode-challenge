@@ -15,5 +15,5 @@ dealRouter.register(r'deal', DealViewSet)
 urlpatterns = [
     url(r'^', include(providersRouter.urls)),
     url(r'^', include(dealRouter.urls)),
-    url(r'^', include(pairRouter.urls))
+    url(r'^', include(pairRouter.urls)),
 ]
