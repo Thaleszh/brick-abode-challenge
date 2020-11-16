@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.db import models
 
 
@@ -13,13 +14,15 @@ class Provider(models.Model):
 
 class Pair(models.Model):
     def __str__(self):
-        return f'{self.name} - {self.time}, at price: {self.price} from {self.provider}'
+        return f'{self.name} - {self.price} from {self.provider}. Time: {self.time}'
 
     name = models.CharField(
         max_length=64
     )
 
-    time = models.DateTimeField
+    time = models.DateTimeField(
+        default=datetime.now
+    )
 
     price = models.FloatField(
         max_length=32
@@ -35,8 +38,7 @@ class Deal(models.Model):
     def __str__(self):
         return f'{self.quantity} - {self.pair}'
 
-    quantity = models.ImageField(
-        max_length=32
+    quantity = models.IntegerField(
     )
 
     pair = models.ForeignKey(
