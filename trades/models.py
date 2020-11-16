@@ -6,7 +6,7 @@ class Provider(models.Model):
     def __str__(self):
         return self.name
 
-    name = models.CharField (
+    name = models.CharField(
         max_length=64
     )
 
@@ -42,7 +42,7 @@ class Pair(models.Model):
 
 class Deal(models.Model):
     def __str__(self):
-        return self.pair + 'x' + self.quantity
+        return self.pair.__str__() + 'x' + self.quantity
 
     quantity = models.ImageField(
         max_length=32
