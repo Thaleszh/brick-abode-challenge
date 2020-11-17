@@ -24,7 +24,6 @@ class Pair(models.Model):
     )
 
     time = models.DateTimeField(
-        unique=True,
         default=datetime.now
     )
 
