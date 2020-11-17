@@ -1,21 +1,10 @@
 # Django
 Django==3.0.7
 
-# Database
-psycopg2===2.8.3
-
-# Envs
-django-dotenv==1.4.2
-s3-environ==0.0.5
-
 # Rest Framework
 djangorestframework==3.11.0
 django-filter==2.2.0
 django-extensions==3.0.9
 
-
 # Project Dependencies
 requests==2.20.0
-sentry-sdk==0.14.0
-urllib3==1.24.0
-boto3==1.15.0
