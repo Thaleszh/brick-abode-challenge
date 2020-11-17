@@ -71,6 +71,10 @@ TEMPLATES = [
     },
 ]
 
+FIXTURE_DIRS = (
+    '/trades/fixtures',
+)
+
 WSGI_APPLICATION = 'brick_abode_chal.wsgi.application'
 
 
