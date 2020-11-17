@@ -7,14 +7,20 @@ Python and the Django REST framework.
 
 - [Python 3.8](https://www.python.org)
 - [Virtualenv](https://github.com/pypa/virtualenv/)
+- Git
 
 ## Instructions to Run
 
+- Clone this repository and move to it
+
+        git clone https://github.com/Thaleszh/brick-abode-challenge/
+        cd brick-abode-challenge
 - Create a python virtual environment and activate it
 
         virtualenv -p python3 venv
         source venv/bin/activate
 - Install the requirements `pip install -r requirements.txt`
+- Create DB and make migrations `python manage.py migrate`
 - Load sample data into the db `python manage.py loaddata trades/fixtures/initial_data.json`
 - Run a sample query script `python manage.py shell < small_queries.py`
 
